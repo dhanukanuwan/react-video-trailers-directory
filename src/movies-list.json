@@ -1,0 +1,130 @@
+{
+  "Venom":{
+    "Image": "https://image.tmdb.org/t/p/w1280/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=u9Mv98Gr5pY",
+    "Year": "2018",
+    "Duration": "1h 52m",
+    "Genre":"Science fiction, action",
+    "Type": "Coming soon"
+  },
+  "A Star Is Born":{
+    "Image": "https://image.tmdb.org/t/p/original/afYn8yJngkM7fS7zEtURWbgvccD.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=nSbzyEJ8X9E",
+    "Year": "2018",
+    "Duration": "2h 15m",
+    "Genre":"Drama, music, romancen",
+    "Type": ""
+  },
+  "The predatorr":{
+    "Image": "https://image.tmdb.org/t/p/w1280/wMq9kQXTeQCHUZOG4fAe5cAxyUA.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=WaG1KZqrLvM",
+    "Year": "2018",
+    "Duration": "1h 47m",
+    "Genre":"Horror, Science fiction, action, thriller",
+    "Type": "New"
+  },
+  "Ant-Man and the Wasp":{
+    "Image": "https://image.tmdb.org/t/p/w1280/rv1AWImgx386ULjcf62VYaW8zSt.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=8_rTIAOohas",
+    "Year": "2018",
+    "Duration": "1h 59m",
+    "Genre":"Action, Adventure, science fiction",
+    "Type": ""
+  },
+  "The Seven Deadly Sins: Prisoners of the Sky":{
+    "Image": "https://image.tmdb.org/t/p/w1280/r6pPUVUKU5eIpYj4oEzidk5ZibB.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=YsrQnv_lGkI",
+    "Year": "2018",
+    "Duration": "1h 46m",
+    "Genre":"Action, adventue, fantasy, animation",
+    "Type": "Coming soon"
+  },
+  "Avengers: Infinity War":{
+    "Image": "https://image.tmdb.org/t/p/w1280/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+    "Year": "2018",
+    "Duration": "2h 29m",
+    "Genre":"Adventure, science fiction, action, fantasy",
+    "Type": ""
+  },
+  "Johnny English Strikes Again":{
+    "Image": "https://image.tmdb.org/t/p/w1280/tCBxnZwLiY1BOKw3tH6AxHZdqPh.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=-Qv6p6pTz5I",
+    "Year": "2018",
+    "Duration": "1h 27m",
+    "Genre":"Adventure, family, action, comedy",
+    "Type": "New"
+  },
+  "The Nun":{
+    "Image": "https://image.tmdb.org/t/p/w1280/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=pzD9zGcUNrw",
+    "Year": "2018",
+    "Duration": "1h 36m",
+    "Genre":"Horror, mystery, thriller",
+    "Type": ""
+  },
+  "The Spy Who Dumped Me":{
+    "Image": "https://image.tmdb.org/t/p/w1280/2lIr27lBdxCpzYDl6WUHzzD6l6H.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=CXkUaaVrB_s",
+    "Year": "2018",
+    "Duration": "1h 57m",
+    "Genre":"Action, comedy",
+    "Type": ""
+  },
+  "Goosebumps 2: Haunted Halloween":{
+    "Image": "https://image.tmdb.org/t/p/w1280/8bcpki9GfXdXj9esFpPtlate8v0.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=nQeOzfm-lps",
+    "Year": "2018",
+    "Duration": "1h 30m",
+    "Genre":"Adventure, comedy, fantasy, horror, family",
+    "Type": "New"
+  },
+  "Black panther":{
+    "Image": "https://image.tmdb.org/t/p/w1280/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=xjDjIWPwcPU",
+    "Year": "2018",
+    "Duration": "2h 14m",
+    "Genre":"Action, adventure, fantasy, science fiction",
+    "Type": ""
+  },
+  "Aan Devathai":{
+    "Image": "https://image.tmdb.org/t/p/w1280/hNT5wBvStUrnBBGVAMkVNVp87LH.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=Tlx2FsudsEY",
+    "Year": "2018",
+    "Duration": "2h 2m",
+    "Genre":"Drama, family",
+    "Type": "New"
+  },
+  "The Meg":{
+    "Image": "https://image.tmdb.org/t/p/w1280/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=udm5jUA-2bs",
+    "Year": "2018",
+    "Duration": "1h 53m",
+    "Genre":"Action, Science fiction, thriller",
+    "Type": "Coming Soon"
+  },
+  "Skyscraper":{
+    "Image": "https://image.tmdb.org/t/p/w1280/5LYSsOPzuP13201qSzMjNxi8FxN.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=t9QePUT-Yt8",
+    "Year": "2018",
+    "Duration": "1h 42m",
+    "Genre":"Action",
+    "Type": ""
+  },
+  "Halloween":{
+    "Image": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lNkDYKmrVem1J0aAfCnQlJOCKnT.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=ek1ePFp-nBI",
+    "Year": "2018",
+    "Duration": "1h 46m",
+    "Genre":"Horror",
+    "Type": ""
+  },
+  "Jurassic World: Fallen Kingdom":{
+    "Image": "https://image.tmdb.org/t/p/w1280/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg",
+    "Trailer": "https://www.youtube.com/watch?v=1FJD7jZqZEk",
+    "Year": "2018",
+    "Duration": "2h 9m",
+    "Genre":"Action, adventure, science fiction, horror",
+    "Type": "Coming soon"
+  }
+}
