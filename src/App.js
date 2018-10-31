@@ -50,7 +50,7 @@ class NavMenuCategories extends Component {
     let categoryName = this.props.categoryName;
 
     return (
-      <nav className="nav-menu-cats-wrap">
+      <nav className="nav-menu-cats-wrap" itemScope itemType="http://schema.org/SiteNavigationElement">
         <h3>{categoryName}</h3>
         <ul>
         {this.props.menuItems.map(function(object, i){
@@ -70,9 +70,9 @@ class NavMenu extends Component {
 
   render() {
     return (
-      <div className="nav-menu-wrap">
+      <div className="nav-menu-wrap" itemScope itemType="http://schema.org/Brand">
         <a href="index.html" className="app-logo">
-          <img src={logo} alt="app-logo" />
+          <img itemProp="logo" src={logo} alt="app-logo" />
         </a>
         <NavMenuCategories onClickFunction={this.passClickedItemData} categoryName={'Categories'} menuItems={['Action','Science Fiction','Drama','Music','Romance','Horror','Thriller','Fantasy','Animation']}  />
         <NavMenuCategories onClickFunction={this.passClickedItemData} categoryName={'Type'} menuItems={['All','Coming Soon','New']}  />
@@ -100,12 +100,12 @@ class MovieSearchBar extends Component {
 
   render() {
     return (
-      <div className="search-bar-wrap">
+      <div className="search-bar-wrap" itemScope itemType="http://schema.org/SearchAction">
         <div className="search-bar-icon">
           <i className="fa fa-search" ></i>
         </div>
         <div className="search-bar-inner">
-          <input type="text" id="search-q" placeholder="Search for your favorite movie" value={this.state.moviesFilter}  onChange={this.handleChange} />
+          <input itemProp="query-input" type="text" id="search-q" placeholder="Search for your favorite movie" value={this.state.moviesFilter}  onChange={this.handleChange} />
         </div>
       </div>
     );
@@ -122,26 +122,33 @@ class SingleMovie extends Component {
     }
 
     return (
-      <div className="single-movie-wrap">
-        <a className="popup-youtube" href={this.props.movieData.Trailer}>
-          <div className="single-movie-inner">
-            <div className="single-movie-img-outer">
-              <img src={this.props.movieData.Image} alt={this.props.movieData.name} />
-              {movieType}
+      <div className="single-movie-wrap" itemScope itemType="http://schema.org/Movie">
+        <div itemProp="potentialAction" itemScope itemType="http://schema.org/WatchAction">
+          <a className="popup-youtube" itemProp="target" href={this.props.movieData.Trailer}>
+            <div className="single-movie-inner">
+              <div className="single-movie-img-outer">
+                <img itemProp="image" src={this.props.movieData.Image} alt={this.props.movieData.name} />
+                <meta itemProp="thumbnail" content={this.props.movieData.Image} />
+                {movieType}
+              </div>
+              <h3 itemProp="name">{this.props.movieData.name} <span>({this.props.movieData.Year})</span></h3>
+              <div className="single-movie-meta">
+                <span itemProp="genre">{this.props.movieData.Genre}</span>
+                <span className="duration">{this.props.movieData.Duration}</span>
+                <meta itemProp="duration" content={this.props.movieData.Duration} />
+              </div>
             </div>
-            <h3>{this.props.movieData.name} <span>({this.props.movieData.Year})</span></h3>
-            <div className="single-movie-meta">
-              <span>{this.props.movieData.Genre}</span>
-              <span className="duration">{this.props.movieData.Duration}</span>
-            </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     );
   }
 }
 
 class MoviesList extends Component {
+
+  state = {currentPage:0}
+
   render() {
 
     let displayedMovies = this.props.movies;
