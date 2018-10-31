@@ -136,7 +136,7 @@ body {
   background: #1a2229;
   padding-top: 70px;
   padding-left: 55px;
-  z-index: 2;
+  z-index: 5;
 }
 .app-logo img{
   max-width: 100px;
@@ -264,6 +264,118 @@ body {
 .single-movie-wrap a{
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+
+  .movie-list-wrap .single-movie-wrap{
+    flex-basis: 25%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+
+  .movie-list-wrap .single-movie-wrap{
+    flex-basis: 33.33%;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+  .nav-menu-wrap{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: auto;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  .movie-trailer-app-content{
+    padding-left: 20px;
+    padding-top: 200px;
+    padding-right: 20px;
+  }
+  .app-logo img{
+    max-width: 70px;
+    display: block;
+    margin: 0 auto;
+  }
+  .nav-menu-cats-wrap{
+    margin-top: 10px;
+  }
+  .nav-menu-cats-wrap h3{
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .nav-menu-cats-wrap ul{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-menu-cats-wrap ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .movie-list-wrap .single-movie-wrap{
+    flex-basis: 33.33%;
+  }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+  .movie-list-wrap .single-movie-wrap{
+    flex-basis: 50%;
+  }
+  .movie-trailer-app-content{
+    padding-top: 230px;
+  }
+  .search-bar-wrap .search-bar-inner input[type="text"]{
+    height: 40px;
+    font-size: 12px;
+  }
+  body.scrolling .nav-menu-cats-wrap{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+
+  .movie-list-wrap .single-movie-wrap{
+    flex-basis: 100%;
+  }
+  .nav-menu-cats-wrap ul li{
+    margin-right: 5px;
+    font-size: 8px;
+  }
+  .movie-trailer-app-content{
+    padding-top: 230px;
+  }
+  .search-bar-wrap .search-bar-icon{
+    flex-basis: 40px;
+    font-size: 12px;
+  }
+  .search-bar-wrap .search-bar-inner input[type="text"]{
+    height: 35px;
+    font-size: 12px;
+  }
+
+  body.scrolling .nav-menu-cats-wrap{
+    display: none;
+  }
+
+
 }
 
 

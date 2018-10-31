@@ -55,7 +55,18 @@
 
         setTimeout($(this).trigger('click'), 100);
 
-    });
+      });
+
+      });
+
+      $(window).scroll(function (event) {
+          let scroll = parseInt( $(window).scrollTop(), 10 );
+
+          if ( scroll > 200 ) {
+            $('body').addClass('scrolling');
+          } else {
+            $('body').removeClass('scrolling');
+          }
 
       });
     </script>

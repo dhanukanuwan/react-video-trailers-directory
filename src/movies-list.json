@@ -4,7 +4,7 @@
     "Trailer": "https://www.youtube.com/watch?v=u9Mv98Gr5pY",
     "Year": "2018",
     "Duration": "1h 52m",
-    "Genre":"Science fiction, action",
+    "Genre":"science fiction,action",
     "Type": "Coming soon"
   },
   "A Star Is Born":{
@@ -12,7 +12,7 @@
     "Trailer": "https://www.youtube.com/watch?v=nSbzyEJ8X9E",
     "Year": "2018",
     "Duration": "2h 15m",
-    "Genre":"Drama, music, romancen",
+    "Genre":"drama,music,romancen",
     "Type": ""
   },
   "The predatorr":{
@@ -20,7 +20,7 @@
     "Trailer": "https://www.youtube.com/watch?v=WaG1KZqrLvM",
     "Year": "2018",
     "Duration": "1h 47m",
-    "Genre":"Horror, Science fiction, action, thriller",
+    "Genre":"horror,Science fiction,action,thriller",
     "Type": "New"
   },
   "Ant-Man and the Wasp":{
@@ -28,7 +28,7 @@
     "Trailer": "https://www.youtube.com/watch?v=8_rTIAOohas",
     "Year": "2018",
     "Duration": "1h 59m",
-    "Genre":"Action, Adventure, science fiction",
+    "Genre":"action,Adventure,science fiction",
     "Type": ""
   },
   "The Seven Deadly Sins: Prisoners of the Sky":{
@@ -36,7 +36,7 @@
     "Trailer": "https://www.youtube.com/watch?v=YsrQnv_lGkI",
     "Year": "2018",
     "Duration": "1h 46m",
-    "Genre":"Action, adventue, fantasy, animation",
+    "Genre":"action,adventue,fantasy,animation",
     "Type": "Coming soon"
   },
   "Avengers: Infinity War":{
@@ -44,7 +44,7 @@
     "Trailer": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
     "Year": "2018",
     "Duration": "2h 29m",
-    "Genre":"Adventure, science fiction, action, fantasy",
+    "Genre":"adventure,science fiction,action,fantasy",
     "Type": ""
   },
   "Johnny English Strikes Again":{
@@ -52,7 +52,7 @@
     "Trailer": "https://www.youtube.com/watch?v=-Qv6p6pTz5I",
     "Year": "2018",
     "Duration": "1h 27m",
-    "Genre":"Adventure, family, action, comedy",
+    "Genre":"adventure,family,action,comedy",
     "Type": "New"
   },
   "The Nun":{
@@ -60,7 +60,7 @@
     "Trailer": "https://www.youtube.com/watch?v=pzD9zGcUNrw",
     "Year": "2018",
     "Duration": "1h 36m",
-    "Genre":"Horror, mystery, thriller",
+    "Genre":"horror,mystery,thriller",
     "Type": ""
   },
   "The Spy Who Dumped Me":{
@@ -68,7 +68,7 @@
     "Trailer": "https://www.youtube.com/watch?v=CXkUaaVrB_s",
     "Year": "2018",
     "Duration": "1h 57m",
-    "Genre":"Action, comedy",
+    "Genre":"action,comedy",
     "Type": ""
   },
   "Goosebumps 2: Haunted Halloween":{
@@ -76,7 +76,7 @@
     "Trailer": "https://www.youtube.com/watch?v=nQeOzfm-lps",
     "Year": "2018",
     "Duration": "1h 30m",
-    "Genre":"Adventure, comedy, fantasy, horror, family",
+    "Genre":"adventure,comedy,fantasy,horror,family",
     "Type": "New"
   },
   "Black panther":{
@@ -84,7 +84,7 @@
     "Trailer": "https://www.youtube.com/watch?v=xjDjIWPwcPU",
     "Year": "2018",
     "Duration": "2h 14m",
-    "Genre":"Action, adventure, fantasy, science fiction",
+    "Genre":"action,adventure,fantasy,science fiction",
     "Type": ""
   },
   "Aan Devathai":{
@@ -92,7 +92,7 @@
     "Trailer": "https://www.youtube.com/watch?v=Tlx2FsudsEY",
     "Year": "2018",
     "Duration": "2h 2m",
-    "Genre":"Drama, family",
+    "Genre":"drama,family",
     "Type": "New"
   },
   "The Meg":{
@@ -100,7 +100,7 @@
     "Trailer": "https://www.youtube.com/watch?v=udm5jUA-2bs",
     "Year": "2018",
     "Duration": "1h 53m",
-    "Genre":"Action, Science fiction, thriller",
+    "Genre":"action,Science fiction,thriller",
     "Type": "Coming Soon"
   },
   "Skyscraper":{
@@ -108,7 +108,7 @@
     "Trailer": "https://www.youtube.com/watch?v=t9QePUT-Yt8",
     "Year": "2018",
     "Duration": "1h 42m",
-    "Genre":"Action",
+    "Genre":"action",
     "Type": ""
   },
   "Halloween":{
@@ -116,7 +116,7 @@
     "Trailer": "https://www.youtube.com/watch?v=ek1ePFp-nBI",
     "Year": "2018",
     "Duration": "1h 46m",
-    "Genre":"Horror",
+    "Genre":"horror",
     "Type": ""
   },
   "Jurassic World: Fallen Kingdom":{
@@ -124,7 +124,7 @@
     "Trailer": "https://www.youtube.com/watch?v=1FJD7jZqZEk",
     "Year": "2018",
     "Duration": "2h 9m",
-    "Genre":"Action, adventure, science fiction, horror",
+    "Genre":"action,adventure,science fiction,horror",
     "Type": "Coming soon"
   }
 }

@@ -6,22 +6,56 @@ import moviesList from './movies-list.json';
 
 
 class NavMenuItem extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+      clickedItemType: "",
+      clickedItemText: ""
+    }
+  }
+
+  handleClick = (e) => {
+
+    const filterType = e.target.innerText.toLowerCase();
+    const filterMethod = e.target.getAttribute("method").toLowerCase();
+    const filterData = [filterType, filterMethod];
+
+    this.setState({
+      clickedItemType: filterMethod,
+      clickedItemText: filterType
+    })
+
+    this.props.onClickFunction( filterData );
+
+  }
+
   render() {
     return (
-      <li>{this.props.menuItemName}</li>
+      <li method={this.props.method} onClick={this.handleClick}>{this.props.menuItemName}</li>
     );
   }
 }
 
 class NavMenuCategories extends Component {
+
+   passClickedItemData = (passedData) => {
+    //return passedData;
+    this.props.onClickFunction( passedData );
+   }
+
+
   render() {
+
+    let categoryName = this.props.categoryName;
+
     return (
       <nav className="nav-menu-cats-wrap">
-        <h3>{this.props.categoryName}</h3>
+        <h3>{categoryName}</h3>
         <ul>
         {this.props.menuItems.map(function(object, i){
-            return <NavMenuItem menuItemName={object} key={i} />;
-        })}
+            return <NavMenuItem onClickFunction={this.passClickedItemData} menuItemName={object} key={i} method={categoryName.toLowerCase()} />;
+        }, this )}
         </ul>
       </nav>
     );
@@ -29,14 +63,19 @@ class NavMenuCategories extends Component {
 }
 
 class NavMenu extends Component {
+
+  passClickedItemData = (passedData) => {
+   this.props.onClickFunction( passedData );
+  }
+
   render() {
     return (
       <div className="nav-menu-wrap">
         <a href="index.html" className="app-logo">
           <img src={logo} alt="app-logo" />
         </a>
-        <NavMenuCategories categoryName={'Categories'} menuItems={['Action','Science Fiction','Drama','Music','Romance','Horror','Thriller','Fantasy','Animation']}  />
-        <NavMenuCategories categoryName={'Type'} menuItems={['All','Coming Soon','New']}  />
+        <NavMenuCategories onClickFunction={this.passClickedItemData} categoryName={'Categories'} menuItems={['Action','Science Fiction','Drama','Music','Romance','Horror','Thriller','Fantasy','Animation']}  />
+        <NavMenuCategories onClickFunction={this.passClickedItemData} categoryName={'Type'} menuItems={['All','Coming Soon','New']}  />
       </div>
     );
   }
@@ -129,25 +168,82 @@ class MoviesList extends Component {
 
 class ContentWrap extends Component {
 
+  handleFilterChange = (inputVal) => {
+
+    //this.props.visibleMovies( filteredMovies );
+    this.props.searchInputVal(inputVal);
+
+  }
+
+  render() {
+
+    return (
+      <div className="movie-trailer-app-content">
+        <MovieSearchBar onChangeFunction={this.handleFilterChange} />
+        <MoviesList movies={this.props.filteredMovies}  />
+      </div>
+    );
+  }
+}
+
+class App extends Component {
+
   constructor() {
     super()
     this.state = {
-      moviesList: [],
-      filteredMovies: [],
-      moviesFilter: ""
+      clickedMenuItem: [],
+      allMovies: moviesList,
+      visibleMovies: moviesList,
+      searchInput: ""
     }
   }
 
-  componentWillMount() {
+  handleMenuItemClick = (clickedItem) => {
+
+    const filterType = clickedItem[0];
+    const filterMethod = clickedItem[1];
+
+    let filteredMovies = [];
+    const allMovies = this.state.allMovies;
+
+    Object.keys(allMovies).forEach(function(key) {
+
+      if ( filterMethod === 'categories' ) {
+
+        let movieGenre = allMovies[key]['Genre'];
+        movieGenre = movieGenre.split(',');
+
+        if ( movieGenre.includes( filterType ) ) {
+          allMovies[key]['name'] = key;
+          filteredMovies.push(allMovies[key]);
+        }
+
+      } else if ( filterMethod === 'type' ) {
+
+        const movieType = allMovies[key]['Type'].toLowerCase();
+
+        if ( movieType === filterType || filterType === 'all' ) {
+          allMovies[key]['name'] = key;
+          filteredMovies.push(allMovies[key]);
+        }
+
+      }
+
+    });
+
     this.setState({
-      moviesList:moviesList,
-      filteredMovies: moviesList
+      visibleMovies: filteredMovies
     })
+
   }
 
-  handleFilterChange = (inputVal) => {
+  getSearchInputVal = (inputVal) => {
+    this.setState({
+      searchInput: inputVal
+    })
+
     let filteredMovies = [];
-    const allMovies = this.state.moviesList;
+    const allMovies = this.state.allMovies;
 
     Object.keys(allMovies).forEach(function(key) {
 
@@ -162,28 +258,15 @@ class ContentWrap extends Component {
     });
 
     this.setState({
-      moviesFilter: inputVal,
-      filteredMovies: filteredMovies
+      visibleMovies: filteredMovies
     })
-    
   }
 
-  render() {
-    return (
-      <div className="movie-trailer-app-content">
-        <MovieSearchBar onChangeFunction={this.handleFilterChange} />
-        <MoviesList movies={this.state.filteredMovies} match={this.props.match}  />
-      </div>
-    );
-  }
-}
-
-class App extends Component {
   render() {
     return (
       <div className="movie-trailer-app">
-        <NavMenu />
-        <ContentWrap />
+        <NavMenu onClickFunction={this.handleMenuItemClick} />
+        <ContentWrap searchInputVal={this.getSearchInputVal} visibleMovies={this.handleVisibleMovies} filteredMovies={this.state.visibleMovies}  />
       </div>
     );
   }
